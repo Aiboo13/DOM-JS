@@ -8,6 +8,7 @@ const allImages = document.getElementsByTagName('img');
 // }
 
 const squareImages = document.getElementsByClassName('square');
+// sama dengan tag name namun ini menggunakan class 
 
 for (let img of squareImages) {
 	img.src =
