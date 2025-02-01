@@ -28,8 +28,13 @@ for (let link of links) {
 	link.style.color = 'rgb(0, 108, 134)';
 	link.style.textDecorationColor = 'magenta';
 	link.style.textDecorationStyle = 'wavy';
+	link.innerText = 'haii'
+	// untuk merubah setiap elemnt angker
 }
 
-ocument.querySelectorAll('p a')
+document.querySelectorAll('p a')
 // cara membaca nya adalah carikan saya semua element a pada p
 
+document.querySelectorAll('#banner')
+// meskipun menacari id harus menggunakan ""
+document.querySelectorAll('.banner')
