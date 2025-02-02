@@ -36,5 +36,9 @@ img.square {
 }
 
 .border-danger {
-	border: 3px rgb(148, 26, 37) solid;
+	border: 3px rgb(255, 0, 0) solid;
+}
+
+.h1-bg{
+  background-color: green;
 }

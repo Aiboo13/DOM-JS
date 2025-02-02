@@ -55,3 +55,10 @@ for (const replice of Bold) {
 	replice.innerText = "halo"
 	// querySelectorAll harus menggunakan itu 
 }
+
+const h1 = document.querySelector("h1");
+
+h1.classList.add("border-danger");
+
+h1.classList.add('h1-bg') 
+//ternyata nyambung ke file css
