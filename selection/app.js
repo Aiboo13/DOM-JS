@@ -48,3 +48,10 @@ banner.setAttribute("class", "kucing") //untuk menambhakan class denagn nama kuc
 banner.src;
 // sama halnya dengan get attribtes
 // untuk mendapatkan atribut src
+
+const Bold = document.querySelectorAll("b");
+
+for (const replice of Bold) {
+	replice.innerText = "halo"
+	// querySelectorAll harus menggunakan itu 
+}
