@@ -28,7 +28,8 @@ for (let link of links) {
 	link.style.color = 'rgb(0, 108, 134)';
 	link.style.textDecorationColor = 'magenta';
 	link.style.textDecorationStyle = 'wavy';
-	link.innerText = 'haii'
+	// untuk memebrei style garis yang ada di bahwah elemnt angker
+	// link.innerText = 'haii'
 	// untuk merubah setiap elemnt angker
 }
 
