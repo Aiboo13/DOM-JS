@@ -12,11 +12,11 @@ const allImages = document.getElementsByTagName('img');
 const squareImages = document.getElementsByClassName('square');
 // sama dengan tag name namun ini menggunakan class 
 
-for (let img of squareImages) {
-	img.src =
-	// ini untuk merubah src 
-		'https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Cat_August_2010-4.jpg/1920px-Cat_August_2010-4.jpg';
-}
+// for (let img of squareImages) {
+// 	img.src =
+// 	// ini untuk merubah src 
+// 		'https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Cat_August_2010-4.jpg/1920px-Cat_August_2010-4.jpg';
+// }
 
 const links = document.querySelectorAll('a');
 // memilih element angker 
@@ -38,3 +38,12 @@ document.querySelectorAll('p a')
 document.querySelectorAll('#banner')
 // meskipun menacari id harus menggunakan ""
 document.querySelectorAll('.banner')
+
+const banner = document.querySelector('#banner');
+
+banner.getAttribute("src");
+banner.setAttribute("class", "kucing") //untuk menambhakan class denagn nama kucing
+
+banner.src;
+// sama halnya dengan get attribtes
+// untuk mendapatkan atribut src
