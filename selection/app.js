@@ -61,4 +61,34 @@ const h1 = document.querySelector("h1");
 h1.classList.add("border-danger");
 
 h1.classList.add('h1-bg') 
-//ternyata nyambung ke file css
+//ternyata nyambung ke file css	
+
+
+// menggunakan parents childersn provious next
+const parents = document.querySelector("b").parentElement
+//melihat ortu element
+const children = document.querySelector("p").childElementCount
+// emlihat anak elememnt
+const provious = document.querySelector(".square").previousElementSibling
+// melihat element sbelumnya
+const provioussi = document.querySelector(".square").previousSibling
+// melihat element sebelumnya secara text
+const next = document.querySelector(".square").nextElementSibling
+// melihat element selanjutnya 
+const nextsi = document.querySelector(".square").nextSibling
+// melihat element selanjutnay secara text
+
+
+// append and appendchild();
+
+const newimg = document.createElement("img");
+// createElement untuk membuat element baru
+
+newimg.src = `https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgFdl0wb5v55R8uB7oBE_xgSzEB1ZNNTJBWA&s`
+
+document.body.appendChild(newimg);
+// menambahkan element ke plng bawah mg dari element body 
+
+newimg.classList.add("square");
+
+// append adalah alternatif dari innerTexx 
