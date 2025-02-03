@@ -92,3 +92,17 @@ document.body.appendChild(newimg);
 newimg.classList.add("square");
 
 // append adalah alternatif dari innerTexx 
+
+// cara menambahkan element di antara element
+
+
+const h2 = document.createElement("h2");
+
+h2.append("this is page about cat")
+
+const h3 = document.querySelector("h1");
+
+h3.insertAdjacentElement("afterend", h2)
+// h3 sebagai tempat utama 
+// afterend sebagai posisi h2 
+// cara membaca nya h3 selipkan h2 setelah saya tampil
