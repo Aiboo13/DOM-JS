@@ -41,7 +41,8 @@ input.addEventListener('input', function (e) {
 })
 
 form.addEventListener('submit', function(e){
-	e.preventDefault(); // menhentikan submit form secara default
+	e.preventDefault(); 
+	// menhentikan submit form secara default
   const noteValue = input.value;
 	const newList = document.createElement('li');
 	// membyat element baru yaitu list
@@ -51,6 +52,11 @@ form.addEventListener('submit', function(e){
 	input.value = '';
 	// supaya kembali kosong setelah sudmid
 });
+
+list.addEventListener('click', function (e) {
+	e.target.nodeName = 'li' && e.target.remove();
+	// hanya menghapus list yang sesuai dengan node name li
+})
 
 const button = document.querySelector('#changeColor')
 const section = document.querySelector('#section')
@@ -73,3 +79,4 @@ section.addEventListener('click', function(e){
 	section.classList.toggle('hide')
 	e.stopPropagation(); // prevents
 });
+
