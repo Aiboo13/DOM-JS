@@ -1,27 +1,27 @@
-document.querySelector('button').addEventListener('click', (e) => {
+const button = document.querySelector('button').addEventListener('click',(e) => {
 	console.log(e);
 });
 
 const input = document.querySelector('input');
-input.addEventListener('keydown', (e) => {
+input.addEventListener(`keydown`,(e) => {
 	switch (e.code) {
-		case 'ArrowUp':
-			console.log('Tombol Arah Atas');
+		// e.code tanpa tanda petik
+		case `ArrowDown`:
+			// a besar setap kata yang di sambung diawali huruf besar 
+			console.log('bawah')
 			break;
-		case 'ArrowDown':
-			console.log('Tombol Arah Bawah');
+			case `ArrowLeft`:
+			console.log('kiri')
 			break;
-		case 'ArrowLeft':
-			console.log('Tombol Arah Kiri');
+			case `ArrowRight`:
+			console.log('Kanan')
 			break;
-		case 'ArrowRight':
-			console.log('Tombol Arah Kanan');
+			case `ArrowUp`:
+			console.log('atas')
 			break;
+	
 		default:
-			console.log('diabaikan');
+			console.log('tidak diketahui');
+			break;
 	}
 });
-
-// input.addEventListener('keyup', () => {
-// 	console.log('Tombol dirilis');
-// });
