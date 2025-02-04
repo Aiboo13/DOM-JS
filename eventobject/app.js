@@ -36,6 +36,7 @@ const list = document.querySelector('#notes');
 // 	console.log('nilai berubah')
 // })
 input.addEventListener('input', function (e) {
+	// hanya menghitung dari keydown
 	console.log('nilai berhasil diinputkan')
 })
 
