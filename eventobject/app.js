@@ -31,6 +31,14 @@ const form = document.querySelector('#form');
 const input = document.querySelector('input');
 const list = document.querySelector('#notes');
 
+// input.addEventListener('change', function (e) {
+// 	// nilai tidak akan berpengaruh dengan yang tidak bervalue
+// 	console.log('nilai berubah')
+// })
+input.addEventListener('input', function (e) {
+	console.log('nilai berhasil diinputkan')
+})
+
 form.addEventListener('submit', function(e){
 	e.preventDefault(); // menhentikan submit form secara default
   const noteValue = input.value;
