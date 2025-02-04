@@ -51,3 +51,25 @@ form.addEventListener('submit', function(e){
 	input.value = '';
 	// supaya kembali kosong setelah sudmid
 });
+
+const button = document.querySelector('#changeColor')
+const section = document.querySelector('#section')
+
+const generateRandomcolor = () => {
+	const r = Math.floor(Math.random() * 255	);
+	const g = Math.floor(Math.random() * 255);
+	const b = Math.floor(Math.random() * 255	);
+
+	return `rgb(${r}, ${g}, ${b})`;
+}
+
+button.addEventListener('click', function(e){
+  section.style.backgroundColor = generateRandomcolor();
+	e.stopPropagation(); // prevents
+	// untuk menghnetikan programm biar program ini yang sekali jalan
+});
+
+section.addEventListener('click', function(e){
+	section.classList.toggle('hide')
+	e.stopPropagation(); // prevents
+});
