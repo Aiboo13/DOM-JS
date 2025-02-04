@@ -1,19 +1,30 @@
-const action = document.querySelector('.click')
+const click = document.querySelector('.click');
 
-action.onclick = function(){
-		console.log('clicked')
-	}
+click.onclick = function(){
+	alert("kamu sudah click saya ")
+  }
 
+const btnevn = document.querySelector('#eventbtn');
 
-	action.onmouseover = function() {
-		// untuk action mouse menyentuk element
-    console.log('jangan santuh aku');
+// btnevn.onclick = function(){ 
+// 	alert("haloooooooo")
+// }
+btnevn.addEventListener('click', function() {
+	// alert('click')
+});
+
+btnevn.onmouseover = function(){
+	console.log('hover')
 }
 
-
-const h1 = document.querySelector('h1');
-
-h1.onmouseover = function(){
-	console.log('kamu meneyentuh aku');
+function one(){
+	console.log('ini function one');
 }
+function two(){
+	console.log('this is a function');
+}
+
+btnevn.addEventListener('click', one);
+btnevn.addEventListener('click', two);
+// addEventListener bisa melakuan kedua function
 
