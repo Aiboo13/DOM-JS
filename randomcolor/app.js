@@ -31,18 +31,16 @@ const generateRandomcolor = () => {
 const buttons = document.querySelectorAll('button');
 
 for (const button of buttons) {
-	button.addEventListener(`click`, ()=> {
-		button.style.backgroundColor = generateRandomcolor();
-		//jangan lupa titik style
-		button.style.color = generateRandomcolor();
-	})
+	button.addEventListener(`click`, color)
 }
 const h1 = document.querySelectorAll('h1');
 
 for (const h1s of h1) {
-	h1s.addEventListener(`click`, ()=> {
-		h1s.style.backgroundColor = generateRandomcolor();
+	h1s.addEventListener(`click`,color)
+}
+
+function color(){
+	this.style.backgroundColor = generateRandomcolor();
 		//jangan lupa titik style
-		h1s.style.color = generateRandomcolor();
-	})
+		this.style.color = generateRandomcolor();
 }
