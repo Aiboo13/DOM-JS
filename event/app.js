@@ -1,26 +1,19 @@
-const button = document.querySelector('#clickme');
+const action = document.querySelector('.click')
 
-button.onclick = function () {
-	console.log('You clicked me');
-};
+action.onclick = function(){
+		console.log('clicked')
+	}
 
-const scream = () => {
-	console.log('Dont touch me');
-};
 
-button.onmouseover = scream;
-
-const eventbtn = document.querySelector('#eventbtn');
-eventbtn.addEventListener('click', stepSatu);
-eventbtn.addEventListener('click', stepDua);
-
-function stepSatu() {
-	console.log('step satu');
+	action.onmouseover = function() {
+		// untuk action mouse menyentuk element
+    console.log('jangan santuh aku');
 }
 
-function stepDua() {
-	console.log('step dua');
+
+const h1 = document.querySelector('h1');
+
+h1.onmouseover = function(){
+	console.log('kamu meneyentuh aku');
 }
 
-// eventbtn.onclick = stepSatu;
-// eventbtn.onclick = stepDua;
